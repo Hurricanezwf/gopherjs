@@ -112,11 +112,13 @@ var knownFails = map[string]failReason{
 	"fixedbugs/issue23188.go":  {desc: "incorrect order of evaluation of index operations"},
 	"fixedbugs/issue24547.go":  {desc: "incorrect computing method sets with shadowed methods"},
 
+	// These are new tests in Go 1.11.5
+	"fixedbugs/issue28688.go": {category: notApplicable, desc: "testing runtime optimisations"},
+	
 	// These are new tests in Go 1.12.
 	"fixedbugs/issue23837.go":  {desc: "missing panic on nil pointer-to-empty-struct dereference"},
 	"fixedbugs/issue27201.go":  {desc: "incorrect stack trace for nil dereference in inlined function"},
 	"fixedbugs/issue27518b.go": {desc: "sigpanic can make dead pointer live again"},
-	"fixedbugs/issue28688.go":  {desc: "inline multiplication corrupts an argument on arm"},
 	"fixedbugs/issue29190.go":  {desc: "append does not fail when length overflows"},
 }
 
