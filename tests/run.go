@@ -114,7 +114,7 @@ var knownFails = map[string]failReason{
 
 	// These are new tests in Go 1.11.5
 	"fixedbugs/issue28688.go": {category: notApplicable, desc: "testing runtime optimisations"},
-	
+
 	// These are new tests in Go 1.12.
 	"fixedbugs/issue23837.go":  {desc: "missing panic on nil pointer-to-empty-struct dereference"},
 	"fixedbugs/issue27201.go":  {desc: "incorrect stack trace for nil dereference in inlined function"},
